@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asep — Web Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-brand">
+      <div class="nav-icon">A</div>
+      <span class="nav-logo">Asep</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18 2 2 0 014.96 4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 11.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+      </svg>
+      Let's Talk
+    </a>
+  </nav>
+
+  <section class="hero" id="about">
+    <div class="hero-blob1"></div>
+    <div class="hero-blob2"></div>
+    <div class="deco deco-star" style="top:18%;left:58%">✦</div>
+    <div class="deco deco-star" style="top:70%;right:8%">✦</div>
+    <div class="deco deco-star-sm" style="bottom:22%;left:48%">✧</div>
+    <div class="deco deco-star-sm" style="top:30%;right:6%">✧</div>
+    <div class="deco" style="bottom:15%;left:3%">
+      <div class="deco-dots">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="hero-left">
+      <p class="hero-eyebrow">Web Developer — Indonesia</p>
+      <h1 class="hero-title">Halo, aku<br><span class="name">Asep,</span><span class="role">Web Developer</span></h1>
+      <p class="hero-bio">Web Developer yang fokus membangun pengalaman digital yang fungsional dan bermakna. Aku
+        percaya bahwa kode yang baik adalah kode yang bisa dipahami orang lain — dan desain yang baik adalah yang tidak
+        terasa seperti desain.</p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <div class="meta-label">Lokasi</div>
+          <div class="meta-value">Indonesia</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Fokus</div>
+          <div class="meta-value">Web Dev</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Status</div>
+          <div class="meta-value" style="color:var(--accent2)">Open to Work</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Pengalaman</div>
+          <div class="meta-value">entah</div>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Lihat Project →</a>
+        <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">How i
+          work</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="photo-scene">
+        <div class="photo-wrap-rel">
+          <div class="photo-ring-outer"></div>
+          <div class="profile-photo-wrap">
+            <img class="profile-photo"
+              src="data:image/jpeg;base64,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"
+              alt="Foto profil Asep" />
+          </div>
+        </div>
+        <div class="float-card">
+          <div class="float-card-icon">💼</div>
+          <div class="float-card-body">
+            <div class="float-card-title">Open to Remote Work</div>
+            <div class="float-card-sub"><span>Part-time</span> • <span>Full-time</span></div>
+          </div>
+          <button class="float-card-btn"
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="skills">
+    <div class="section-header">
+      <div class="section-label">Skills & Tools</div>
+      <div class="section-num">02</div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">Frontend</div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">HTML / CSS</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:90%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">React</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:60%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">Tailwind CSS</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Backend</div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Node.js</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:60%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">Python</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:55%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">REST API</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:70%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">MySQL</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:50%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Tools & Lainnya</div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Git / GitHub</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:80%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">Figma</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:65%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">VS Code</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:90%"></div>
+            </div>
+          </div>
+          <div class="skill-item"><span class="skill-name">Linux CLI</span>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:55%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="projects">
+    <div class="section-header">
+      <div class="section-label">Selected Work</div>
+      <div class="section-num">03</div>
+    </div>
+    <div class="projects-grid">
+      <button class="project-card featured" onclick="alert('link project')">
+        <div class="proj-placeholder">
+          <div class="proj-placeholder-icon">🖼</div>
+          <div class="proj-placeholder-text">screenshot project</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-num">001 — Featured</span><span class="proj-arrow">↗</span></div>
+          <h2 class="proj-title">Project Utama</h2>
+          <p class="proj-desc">Deskripsi singkat project ini </p>
+          <div class="proj-tags"><span class="tag">React</span><span class="tag">Node.js</span><span
+              class="tag">MySQL</span></div>
+        </div>
+      </button>
+      <button class="project-card" onclick="alert('link project')">
+        <div class="proj-placeholder">
+          <div class="proj-placeholder-icon">🖼</div>
+          <div class="proj-placeholder-text">screenshot project</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-num">002</span><span class="proj-arrow">↗</span></div>
+          <h2 class="proj-title">Project Kedua</h2>
+          <p class="proj-desc">Deskripsi singkat project ini</p>
+          <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+              class="tag">JavaScript</span></div>
+        </div>
+      </button>
+      <button class="project-card" onclick="alert(' link project')">
+        <div class="proj-placeholder">
+          <div class="proj-placeholder-icon">🖼</div>
+          <div class="proj-placeholder-text">screenshot project</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-top"><span class="proj-num">003</span><span class="proj-arrow">↗</span></div>
+          <h2 class="proj-title">Project Ketiga</h2>
+          <p class="proj-desc">Deskripsi singkat project ini</p>
+          <div class="proj-tags"><span class="tag">Python</span><span class="tag">API</span></div>
+        </div>
+      </button>
+      <div class="add-card" onclick="alert('Tambahkan project ')">
+        <div class="add-icon">+</div>
+        <span>Tambah project</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-section reveal">
+      <div>
+        <h2 class="contact-title">Let's<br><em>connect.</em></h2>
+        <p class="contact-sub">Terbuka untuk peluang freelance, kolaborasi project, atau sekadar ngobrol soal web dev.
+          Jangan ragu menghubungi!</p>
+        <div class="social-links">
+          <button class="social-link"
+            onclick="window.open('https://github.com/aasepkurniawan47-jpg','_blank')"><span>GitHub</span><span
+              style="color:var(--muted);font-size:.7rem">@aasepkurniawan47-jpg ↗</span></button>
+          <button class="social-link"
+            onclick="window.open('https://instagram.com/seyuozpoken','_blank')"><span>Instagram</span><span
+              style="color:var(--muted);font-size:.7rem">@seyuozpoken ↗</span></button>
+          <button class="social-link"
+            onclick="window.location.href='mailto:aasepkurniawan47@gmail.com'"><span>Email</span><span
+              style="color:var(--muted);font-size:.7rem">aasepkurniawan47@gmail.com ↗</span></button>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-group"><label class="form-label">Nama</label><input type="text" class="form-input"
+            placeholder="Nama kamu" /></div>
+        <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input"
+            placeholder="email@kamu.com" /></div>
+        <div class="form-group"><label class="form-label">Pesan</label><textarea class="form-textarea"
+            placeholder="Halo Asep, aku tertarik untuk..."></textarea></div>
+        <button class="btn-primary" onclick="alert('Hubungkan ke EmailJS atau backend-mu!')"
+          style="align-self:flex-start">Kirim Pesan ↗</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-copy">© 2025 Asep — All rights reserved.</span>
+    <button class="footer-back" onclick="window.scrollTo({top:0,behavior:'smooth'})">Kembali ke atas ↑</button>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }),
+      { threshold: .12 }
+    );
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+    }, { passive: true });
+  </script>
+</body>
+
+</html>
